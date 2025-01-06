@@ -2,6 +2,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+//用于在指定目录及其子目录下查找包含指定文件名的文件01、11
 public class FileSearch {
     public static List<String> searchFiles(String directory, String fileName) {
         List<String> resultList = new ArrayList<>();
