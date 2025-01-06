@@ -67,7 +67,7 @@ public class FileExplorerGUI extends JFrame {
 
         add(mainPanel);
     }
-
+//搜索文件功能01、11
     private void searchFiles() {
         String directory = directoryTextField.getText();
         String fileName = fileNameTextField.getText();
@@ -90,7 +90,7 @@ public class FileExplorerGUI extends JFrame {
             JOptionPane.showMessageDialog(null, "未找到匹配的文件");
         }
     }
-
+//文件复制粘贴相关操作11
     private void pasteFile() {
         if (copiedFilePath == null || copiedFilePath.isEmpty()) {
             JOptionPane.showMessageDialog(null, "剪贴板中没有文件路径");
@@ -133,7 +133,7 @@ public class FileExplorerGUI extends JFrame {
         int fileCount = FileSearch.countFilesInFolder(directory);
         JOptionPane.showMessageDialog(null, "文件夹中的文件数量：" + fileCount);
     }
-
+//文件预览功能相关代码11
     private void previewFile() {
         String directory = directoryTextField.getText();
         String fileName = fileNameTextField.getText();
