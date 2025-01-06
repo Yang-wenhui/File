@@ -5,10 +5,11 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
 public class main {
+    //此方法用于复制文件11
     public static void copyFile(String sourceFile, String destinationFile) throws IOException {
         Files.copy(Paths.get(sourceFile), Paths.get(destinationFile), StandardCopyOption.REPLACE_EXISTING);
     }
-
+//文件预览功能相关代码11
     public static String previewTextFile(String filePath, int numLines) throws IOException {
         StringBuilder preview = new StringBuilder();
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filePath), StandardCharsets.UTF_8))) {
@@ -34,7 +35,7 @@ public class main {
             }
         }
     }
-
+//用于获取文件的扩展名01、11
     public static String getFileExtension(String fileName) {
         int dotIndex = fileName.lastIndexOf(".");
         if (dotIndex > 0 && dotIndex < fileName.length() - 1) {
